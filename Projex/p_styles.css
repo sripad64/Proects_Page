@@ -1,0 +1,403 @@
+#icon{
+    height: 10vh;
+    width: 10vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+header{
+    height: 100vh;
+    background-color:beige;
+    padding: 5vh;
+    text-align:  center;
+    font-size: 40px;
+}
+
+                                                /* Parallax Begins Here */
+
+.about{
+    height: 200vh;
+    display: flex;
+
+        
+
+}
+
+.about-pages{
+    width: 50%; 
+}
+
+
+.about-title{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    /*Horizontal alignment*/
+    justify-content: center;
+    /*Vertical alignment*/
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+
+
+}
+
+
+.about-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+
+.about-pages div> p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.about-pages div:nth-child(1){
+    background-color: pink;
+}
+.about-pages div:nth-child(2){
+    background-color: greenyellow;
+}
+
+                                                /* Parallax Ends Here */
+
+
+
+
+.jsproject{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+    background-color: rgb(246, 252, 122);
+
+}
+
+
+.pyproject{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+    background-color: rgb(158, 58, 158);
+
+}
+
+
+
+.jslogo{
+    padding-top: 1vw;
+    padding-left: 5vw;
+    scale:12;
+    opacity: 70%;
+    
+}
+
+
+#pylogo{
+    padding-top: 3vw;
+    padding-left: 7.2vw;
+    opacity: 60%;
+    scale: 10;
+    
+}
+
+
+
+.project-container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.jslabel{
+    margin-top: 5vh;
+    font-size: 5vh;
+    size: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.pylabel{
+
+    margin-top: 5vh;
+    font-size: 5vh;
+    display: flex;
+    justify-content: flex-start;
+ 
+    
+}
+
+
+
+
+.project-card{
+    background-color: white;
+    width: 315px;
+    height: 420px;
+    margin: 20px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px rgb(224, 222, 222);
+    transition: 0.9s;
+}
+
+.project-card:hover{
+    scale: 115%;
+    background-color: beige;
+    box-shadow: 2px 2px 2px grey;
+    
+    
+}
+
+.subtext{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.project-image{
+    padding: 5px;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image{
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.project-link{
+    text-decoration: none;
+    color: lightsalmon;
+}
+
+
+                            /*------------ PROJECT CARD ANIMATION START------------ */
+/*Left Card*/
+.fadeInLeft{
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+@-o-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -o-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*Left Middle Card*/
+
+.fadeInTop{
+    -webkit-animation: fadeInTop 1.2s both;
+    -moz-animation: fadeInTop 1.2s both;
+    -o-animation: fadeInTop 1.2s both;
+    animation: fadeInTop 1.2s both;
+
+}
+
+@-webkit-keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -moz-transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@-o-keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -o-transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Right Middle Card*/
+
+.fadeInBottom{
+    -webkit-animation: fadeInBottom 1.2s both;
+    -moz-animation: fadeInBottom 1.2s both;
+    -o-animation: fadeInBottom 1.2s both;
+    animation: fadeInBottom 1.2s both;
+
+}
+
+@-webkit-keyframes fadeInBottom {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes fadeInBottom {
+    0%{
+        opacity: 0;
+        -moz-transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@-o-keyframes fadeInBottom {
+    0%{
+        opacity: 0;
+        -o-transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Right Card*/
+
+.fadeInRight{
+    -webkit-animation: fadeInRight 1.2s both;
+    -moz-animation: fadeInRight 1.2s both;
+    -o-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both;
+
+}
+
+@-webkit-keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -moz-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+@-o-keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -o-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+                            /*------------ PROJECT CARD ANIMATION END------------ */
